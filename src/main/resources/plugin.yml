@@ -1,0 +1,8 @@
+name: AreaLimit
+version: '${version}'
+main: org.yu1.arealimit.AreaLimit
+api-version: '1.13'
+commands:
+  alt:
+    aliases:
+      - AreaLimit

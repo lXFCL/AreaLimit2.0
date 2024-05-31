@@ -1,0 +1,10 @@
+Commands:
+  reload: "&b&l[区域限制] &a➠ &f/alt reload 重载插件"
+  start: "&b&l[区域限制] &a➠ &f/alt start 开启区域限制模式"
+
+Permission:
+  reload: "ps.reload" #重置插件的权限名
+
+Messages:
+  reload: "&b&l[区域限制] &a➠ &f插件重置成功!"
+  noPermission: "&b&l[区域限制] &a➠ &f你没有执行该指令的权限"
