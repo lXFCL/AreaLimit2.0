@@ -1,10 +1,18 @@
 Commands:
   reload: "&b&l[区域限制] &a➠ &f/alt reload 重载插件"
-  start: "&b&l[区域限制] &a➠ &f/alt start 开启区域限制模式"
+  start: "&b&l[区域限制] &a➠ &f/alt start [自定义名称] 开启区域限制模式"
 
 Permission:
-  reload: "ps.reload" #重置插件的权限名
+  reload: "alt.reload" #重置插件的权限名
+  start: "alt.start" #开启区域限制模式的权限名
 
 Messages:
   reload: "&b&l[区域限制] &a➠ &f插件重置成功!"
   noPermission: "&b&l[区域限制] &a➠ &f你没有执行该指令的权限"
+  noPlayer: "&b&l[区域限制] &a➠ &f该指令只能由玩家执行"
+  start: "&b&l[区域限制] &a➠ &f区域限制模式开启成功！请你左键点击第一个方块！"
+  first: "&b&l[区域限制] &a➠ &f已选取第一个方块！请你右键点击第二个方块！"
+  noFirst: "&b&l[区域限制] &a➠ &f请先选取第一个方块！"
+  second: "&b&l[区域限制] &a➠ &f已选取第二个方块！"
+  noBreak: "&b&l[区域限制] &a➠ &c该区域已被限制！禁止破坏！"
+  noPlace: "&b&l[区域限制] &a➠ &c该区域已被限制！禁止放置！"

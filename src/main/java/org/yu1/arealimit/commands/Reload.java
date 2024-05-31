@@ -1,7 +1,6 @@
 package org.yu1.arealimit.commands;
 
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.YamlConfiguration;
 
 public class Reload extends MainCommand{
     public Reload(CommandSender sender)

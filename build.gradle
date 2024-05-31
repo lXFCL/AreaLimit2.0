@@ -53,5 +53,5 @@ processResources {
 task copy(type: Copy, dependsOn: jar) {
     from buildDir.absolutePath + "\\libs\\"
     into "D:\\catserver\\1.12.2\\plugins"
-    include('**/' + archivesBaseName + version +'.jar')
+    include('**/' + archivesBaseName + '-' + version +'.jar')
 }

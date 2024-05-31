@@ -3,8 +3,8 @@ package org.yu1.arealimit;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.yu1.arealimit.commands.MainCommand;
-
-import java.io.File;
+import org.yu1.arealimit.listener.BlockListener;
+import org.yu1.arealimit.listener.PlayerListener;
 
 public final class AreaLimit extends JavaPlugin {
 
@@ -24,10 +24,6 @@ public final class AreaLimit extends JavaPlugin {
     @Override
     public void onEnable() {
         inst = this;
-        File store = new File(getDataFolder(), "store.yml");
-        if (!store.exists()) {
-            saveResource("store.yml", true);
-        }
         getLogger().info("§b __   __   ____    ____     __        ");
         getLogger().info("§b/\\ \\ /\\ \\ /\\  _`\\ /\\  _`\\  /\\ \\       ");
         getLogger().info("§b\\ `\\`\\/'/'\\ \\ \\L\\_\\ \\ \\/\\_\\\\ \\ \\      ");
@@ -45,6 +41,8 @@ public final class AreaLimit extends JavaPlugin {
         saveDefaultConfig();
         reloadConfig();
         Bukkit.getPluginCommand("alt").setExecutor(new MainCommand());
+        Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
+        Bukkit.getPluginManager().registerEvents(new BlockListener(), this);
     }
 
     @Override

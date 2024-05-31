@@ -5,7 +5,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.yu1.arealimit.AreaLimit;
 
-import java.io.IOException;
 
 public class MainCommand implements CommandExecutor {
     public static final AreaLimit INSTANCE = AreaLimit.getInstance();
@@ -22,7 +21,7 @@ public class MainCommand implements CommandExecutor {
                     new Reload(sender);
                     break;
                 case "start":
-                    new Start();
+                    new Start(sender,args);
                     break;
                 default:
                     break;
