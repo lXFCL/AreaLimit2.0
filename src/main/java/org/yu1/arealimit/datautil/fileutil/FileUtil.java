@@ -28,6 +28,13 @@ public class FileUtil extends MainCommand {
         YamlConfiguration filec = YamlConfiguration.loadConfiguration(file);
         return filec.getInt(dataName);
     }
+
+    public static boolean getBoolData(String dataName)
+    {
+        File file = new File(INSTANCE.getDataFolder() + "/data/", "area.yml");
+        YamlConfiguration filec = YamlConfiguration.loadConfiguration(file);
+        return filec.getBoolean(dataName);
+    }
     public static String getStringData(String dataName)
     {
         File file = new File(INSTANCE.getDataFolder() + "/data/", "area.yml");

@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.yu1.arealimit.commands.MainCommand;
 import org.yu1.arealimit.listener.BlockListener;
+import org.yu1.arealimit.listener.MoveListener;
 import org.yu1.arealimit.listener.PlayerListener;
 
 public final class AreaLimit extends JavaPlugin {
@@ -43,6 +44,7 @@ public final class AreaLimit extends JavaPlugin {
         Bukkit.getPluginCommand("alt").setExecutor(new MainCommand());
         Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
         Bukkit.getPluginManager().registerEvents(new BlockListener(), this);
+        new MoveListener();
     }
 
     @Override

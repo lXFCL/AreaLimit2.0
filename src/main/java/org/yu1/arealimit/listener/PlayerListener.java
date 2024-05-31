@@ -31,6 +31,7 @@ public class PlayerListener extends MainCommand implements Listener {
             FileUtil.setData(areaName + "x2", x);
             FileUtil.setData(areaName + "z2", z);
             FileUtil.setData(areaName + "world", worldName);
+            FileUtil.setData(areaName + "walk", true);
             FileUtil.setData("player", null);
             FileUtil.setData("areaName", null);
             FileUtil.setData("first", null);

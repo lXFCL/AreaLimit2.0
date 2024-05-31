@@ -6,6 +6,16 @@ Permission:
   reload: "alt.reload" #重置插件的权限名
   start: "alt.start" #开启区域限制模式的权限名
 
+Settings:
+  time: 5 #多少个0.25秒检测一次所在位置 此选项请在开服前就确认好
+
+#将禁止穿着冰霜行者的玩家踢到哪个区域？
+Location:
+  x: 178
+  y: 78
+  z: 438
+  world: world
+
 Messages:
   reload: "&b&l[区域限制] &a➠ &f插件重置成功!"
   noPermission: "&b&l[区域限制] &a➠ &f你没有执行该指令的权限"
@@ -16,3 +26,5 @@ Messages:
   second: "&b&l[区域限制] &a➠ &f已选取第二个方块！"
   noBreak: "&b&l[区域限制] &a➠ &c该区域已被限制！禁止破坏！"
   noPlace: "&b&l[区域限制] &a➠ &c该区域已被限制！禁止放置！"
+  #这个你可以通过修改存储坐标数据的文件修改是否开启允许冰霜行者进入 默认为true
+  noWalker: "&b&l[区域限制] &a➠ &c该区域已被限制！禁止穿着冰霜行者进入！"
