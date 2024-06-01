@@ -11,7 +11,7 @@ Settings:
 
 #将禁止穿着冰霜行者的玩家踢到哪个区域？
 Location:
-  x: 178
+  x: -178
   y: 78
   z: 438
   world: world
