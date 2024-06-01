@@ -38,7 +38,7 @@ public final class AreaLimit extends JavaPlugin {
         getLogger().info("§b§l[区域限制] §a-> §f插件售后交流群:928752729");
         getLogger().info("§b§l[区域限制] §a-> §f需要定制插件可以进群加我");
         getLogger().info("§b§l[区域限制] §a-> §f感谢你的使用");
-        getLogger().info("§b§l[区域限制] §a-> §f插件版本:1.0");
+        getLogger().info("§b§l[区域限制] §a-> §f插件版本:1.1");
         saveDefaultConfig();
         reloadConfig();
         Bukkit.getPluginCommand("alt").setExecutor(new MainCommand());

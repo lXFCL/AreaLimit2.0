@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'org.samp1'
-version = 'V1.0'
+version = 'V1.1'
 archivesBaseName = '[A]AreaLimit区域限制'
 
 

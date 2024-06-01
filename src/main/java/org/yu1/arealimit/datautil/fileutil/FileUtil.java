@@ -7,6 +7,8 @@ import java.io.File;
 import java.util.Set;
 
 public class FileUtil extends MainCommand {
+    static File file = new File(INSTANCE.getDataFolder() + "/data/", "area.yml");
+    static YamlConfiguration filec = YamlConfiguration.loadConfiguration(file);
     static {
         new File(INSTANCE.getDataFolder() + "/data/");
     }
@@ -24,27 +26,19 @@ public class FileUtil extends MainCommand {
 
     public static int getIntData(String dataName)
     {
-        File file = new File(INSTANCE.getDataFolder() + "/data/", "area.yml");
-        YamlConfiguration filec = YamlConfiguration.loadConfiguration(file);
         return filec.getInt(dataName);
     }
 
     public static boolean getBoolData(String dataName)
     {
-        File file = new File(INSTANCE.getDataFolder() + "/data/", "area.yml");
-        YamlConfiguration filec = YamlConfiguration.loadConfiguration(file);
         return filec.getBoolean(dataName);
     }
     public static String getStringData(String dataName)
     {
-        File file = new File(INSTANCE.getDataFolder() + "/data/", "area.yml");
-        YamlConfiguration filec = YamlConfiguration.loadConfiguration(file);
         return filec.getString(dataName);
     }
     public static Set<String> getKeys()
     {
-        File file = new File(INSTANCE.getDataFolder() + "/data/", "area.yml");
-        YamlConfiguration filec = YamlConfiguration.loadConfiguration(file);
         return filec.getKeys(false);
     }
 }
